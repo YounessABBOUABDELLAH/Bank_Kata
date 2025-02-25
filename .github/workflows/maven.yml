@@ -31,4 +31,7 @@ jobs:
         cache: maven
 
     - name: Build and run tests with Maven
-      run: mvn clean install -B
+      run: |
+        mvn clean install -B
+        mvn test
+    
